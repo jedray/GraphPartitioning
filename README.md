@@ -20,6 +20,6 @@ The compilation command in the makefile uses `mpiicc`. To compile, run the comma
 
 The execution command in the makefile uses `mpirun`. To execute, run the command
 
-        $> make 
+        $> make run DATA=fileDirectory INPUT=file.graph
         
 
