@@ -43,14 +43,14 @@ int main(int argc, char *argv[]){
     k = 2;
     recursive_spectral_bisection(laplace,&n,&n,k, &partition, MPI_COMM_WORLD);
     
-   /* 
+   
     if(rank == 0){
         for(i=0;i<n;i++){
-            printf("%d \n",partition[i]);
+            printf("node %d in the subset %d\n",i, partition[i]);
         }
         printf("\n");
     }
-    */
+    
     t2 = MPI_Wtime();    
     MPI_Barrier(MPI_COMM_WORLD);
     
